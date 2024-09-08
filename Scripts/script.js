@@ -8,11 +8,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         const contactList = document.getElementById('contactList');
 
         //create a new list item for the contact
-        const li = document.createElement('li');
-        li.textContent = `${name} - ${phone}`;
+        const list = document.createElement('list');
+        list.textContent = `${name} - ${phone}`;
 
         //add the list item to the contact list
-        contactList.appendChild(li);
+        contactList.appendChild(list);
 
         //clear the form inputs
         document.getElementById('name').value = '';
